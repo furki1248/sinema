@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinema Rezervasyon uygulamasi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="movie">
+      <div class="row">
+        <div class="err ">
+          <a href="#curtain" style="text-decoration: none;text-align: center; color: white;">
+            <span>
+              Lutfen film Seciniz 
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+
+        </a>
+          
+        </div>
+        </div>
+      </div>
+        
+    </div>
+    <div class="container " style="height: 100vh; margin-top: 10rem;" id="curtain">
+      <div>
+        <div class="screen"></div>
+      <div class="row">
+        <p class="order">A</p>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat reserved"></div>
+        <div class="seat reserved"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <p class="order">B</p>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat reserved"></div>
+        <div class="seat reserved"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <p class="order">C</p>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <p class="order">D</p>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <p class="order">E</p>
+
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <p class="order">F</p>
+
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <p class="order">F</p>
+
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <p class="order">F</p>
+
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      </div>
+      <div class="movie_detail">
+        <div class="movieList">
+          <select id="movie">
+            <option disabled>Film Seciniz...</option>
+            <option value="85">Semur 4:Mahser</option>
+            <option value="200">Barbie</option>
+            <option value="145">Oppenheimer</option>
+            <option value="100">Siccin 7</option>
+          </select>
+        </div>
+  
+        <ul class="info">
+          <li>
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+                margin: 5px;
+                background-color: gray;
+                background-color: goldenrod;
+              "
+            ></div>
+            <small>Secildi</small>
+          </li>
+          <li>
+            <div class="seat"></div>
+            <small>Bos</small>
+          </li>
+          <li>
+            <div class="seat reserved"></div>
+            <small>Dolu</small>
+          </li>
+        </ul>
+  
+        <p class="text">
+          <span id="count">0</span> adet koltuk icin hesaplanan ucret
+          <span id="amount">0</span>
+        </p>
+  
+        <button class="btn">Ödeme yap</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      Butun haklari saklidir &copy;2024
+    </div>
+
+    
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
